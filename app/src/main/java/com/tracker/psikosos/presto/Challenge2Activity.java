@@ -106,6 +106,7 @@ public class Challenge2Activity extends ActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK)
         {
+        	completed = true;
             finish();
             startActivity(getIntent());
         }
