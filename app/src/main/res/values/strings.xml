@@ -6,7 +6,55 @@
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_challenge">ChallengeActivity</string>
     <string name="your_id">ID Anda</string>
-    <string name="your_id_description">Carilah tim dengan ID yang memiliki kesamaan dengan anda</string>
+    <string name="your_id_description">Carilah tim dengan ID yang memiliki kesamaan kategori dengan anda</string>
 
-    <string name="your_challenge">Tantangan</string>
+    <string name="your_challenge">Tantangan 1</string>
+
+    <string-array name="kategori1">
+        <item>Kucing</item>
+        <item>Kuda</item>
+        <item>Sapi</item>
+        <item>Rusa</item>
+        <item>Bakung</item>
+        <item>Anggrek</item>
+        <item>Melati</item>
+        <item>Mawar</item>
+    </string-array>
+
+    <string-array name="kategori2">
+        <item>Kangkung</item>
+        <item>Bayam</item>
+        <item>Kol</item>
+        <item>Sawi</item>
+        <item>Jeruk</item>
+        <item>Apel</item>
+        <item>Semangka</item>
+        <item>Pepaya</item>
+    </string-array>
+
+    <string-array name="kategori3">
+        <item>Golden Retriever</item>
+        <item>Chihuahua</item>
+        <item>Labrador Retriever</item>
+        <item>Beagle</item>
+        <item>Angora</item>
+        <item>Persia</item>
+        <item>Somali</item>
+        <item>Siamese</item>
+    </string-array>
+
+    <string name="tantangan_1">
+        Ambil foto landscape berdasarkan ukuran sepatu! Orang yang di paling kanan memiliki ukuran
+        sepatu yang paling besar.
+    </string>
+    <string name="title_activity_activity_challenge_2">activity_challenge_2</string>
+    <string name="title_activity_challenge2">Challenge2Activity</string>
+
+    <string name="tantangan_2">Deskripsi Tantangan 2</string>
+    <string name="tantangan_3">Deskripsi Tantangan 3</string>
+
+    <string name="your_challenge_2">Tantangan 2</string>
+    <string name="your_challenge_3">Tantangan 3</string>
+    <string name="title_activity_challenge3">Challenge3Activity</string>
+
 </resources>

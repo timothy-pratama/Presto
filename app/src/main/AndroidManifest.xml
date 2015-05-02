@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tracker.psikosos.presto" >
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +25,8 @@
         </activity>
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map" >
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait" >
         </activity>
 
         <meta-data
@@ -35,7 +38,20 @@
 
         <activity
             android:name=".ChallengeActivity"
+            android:configChanges="orientation"
             android:label="@string/title_activity_challenge" >
+        </activity>
+        <activity
+            android:name=".activity_challenge_2"
+            android:label="@string/title_activity_activity_challenge_2" >
+        </activity>
+        <activity
+            android:name=".Challenge2Activity"
+            android:label="@string/title_activity_challenge2" >
+        </activity>
+        <activity
+            android:name=".Challenge3Activity"
+            android:label="@string/title_activity_challenge3" >
         </activity>
     </application>
 

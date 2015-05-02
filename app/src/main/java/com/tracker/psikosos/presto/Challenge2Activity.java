@@ -1,11 +1,8 @@
 package com.tracker.psikosos.presto;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -15,41 +12,35 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Random;
 
 
-public class ChallengeActivity extends Activity {
-    public static boolean completed = false;
-
+public class Challenge2Activity extends ActionBarActivity {
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
+
+    public static boolean completed = false;
 
     private Uri fileUri;
     private ImageView imageView;
 
     private final String dir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/Presto/";
-    private final int page = 1;
+    private final int page = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_challenge);
+        setContentView(R.layout.activity_challenge2);
         randomKategori1();
 
-        TextView challenge_content = (TextView) findViewById(R.id.your_challenge_content);
-        challenge_content.setText(getResources().getText(R.string.tantangan_1));
+        TextView challenge_content = (TextView) findViewById(R.id.your_challenge_content_2);
+        challenge_content.setText(getResources().getText(R.string.tantangan_2));
 
-        imageView = (ImageView) findViewById(R.id.photo_result1);
+        imageView = (ImageView) findViewById(R.id.photo_result2);
 
         File newDir = new File(dir);
         newDir.mkdirs();
@@ -64,8 +55,8 @@ public class ChallengeActivity extends Activity {
 
     private void randomKategori1()
     {
-        TextView your_id_content = (TextView) findViewById(R.id.your_id_content);
-        String[] array = getResources().getStringArray(R.array.kategori1);
+        TextView your_id_content = (TextView) findViewById(R.id.your_id_content_2);
+        String[] array = getResources().getStringArray(R.array.kategori2);
         String randomStr = array[new Random().nextInt(array.length)];
         your_id_content.setText(randomStr);
     }
@@ -115,9 +106,9 @@ public class ChallengeActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK)
         {
-            completed = true;
             finish();
             startActivity(getIntent());
         }
     }
+
 }
